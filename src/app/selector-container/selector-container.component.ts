@@ -16,6 +16,7 @@ export class SelectorContainerComponent implements OnInit {
         ' sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
 
     public selections = this.store.select(getSelectorSelections);
+
     constructor(private store: Store<AppState>) {
     }
 
