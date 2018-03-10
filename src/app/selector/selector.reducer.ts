@@ -2,7 +2,6 @@ import { Action } from '@ngrx/store';
 import { ACTIONS, STORE_SELECTOR_NAMESPACE } from './constant';
 import { StoreSelector } from './selector.model';
 
-
 const INITIAL_STATE: StoreSelector = {
     selectorSelections: []
 };
@@ -24,7 +23,6 @@ function selectedHighlightHandler() {
 const REDUCER_MAP = {
     [ACTIONS.SELECTED_HIGHLIGHT]: selectedHighlightHandler()
 };
-
 
 function selectorReducer(state = INITIAL_STATE, action: Action) {
     const handler = REDUCER_MAP[action.type];

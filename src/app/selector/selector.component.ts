@@ -18,7 +18,6 @@ export class SelectorComponent implements OnInit {
     public ngOnInit() {
     }
 
-
     public handleMouseUp() {
         const selection = this.windowRefService.getWindow().getSelection();
         this.store.dispatch({

@@ -21,5 +21,4 @@ export class SelectorContainerComponent implements OnInit {
 
     ngOnInit() {
     }
-
 }
